@@ -175,14 +175,18 @@ body {
   width: 100%;
 }
 
+.content {
+  width: 100%;
+}
+
 .map {
-  /* display: flex; */
   margin: 20px;
 }
 
 .facebook-logo {
   height: 50px;
   width: 50px;
+  margin-right: 2%;
 }
 
 .insta-logo {
