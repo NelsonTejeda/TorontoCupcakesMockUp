@@ -210,3 +210,7 @@ body {
 }
 
 /* non-footer and header code. */
+
+.homePageBanner{
+  margin: 0 5%;
+}
