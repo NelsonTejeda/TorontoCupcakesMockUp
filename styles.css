@@ -211,6 +211,67 @@ body {
 
 /* non-footer and header code. */
 
-.homePageBanner{
+.homePageBanner {
+  color: #ff5c8a;
   margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePageBanner h1 {
+  font-size: 48px;
+}
+
+.favorite_cupcakes_object {
+  color: #ff5c8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.favorite_cupcakes_object h1 {
+  font-size: 48px;
+}
+
+.favorite_cupcakes_div img {
+  width: 15%;
+  height: auto;
+  padding: 2%;
+}
+
+.favorite_cupcakes_div img:hover {
+  border: 5px dotted #ff477e;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.favorite_cupcakes_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu_button {
+  background-color: #ff5c8a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.menu_button_div {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
