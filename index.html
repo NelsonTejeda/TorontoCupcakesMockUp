@@ -71,15 +71,54 @@
       </div>
     </section>
     <section id="favorite_cupcakes_section">
-      <div class="favorite_cupcakes_object">
-        <h1>Best Sellers</h1>
-        <div class="favorite_cupcakes_div">
-          <img src="assests/bestSellerCupcakes/vanillavanilla.webp" /><img
-            src="assests/bestSellerCupcakes/chocolateoreo.webp"
-          /><img src="assests/bestSellerCupcakes/vanillacarmel.webp" /><img
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Prev button -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img
             src="assests/bestSellerCupcakes/redvelvet.webp"
+            style="height: 250px; width: auto"
           />
+          <div class="text">Red Velvet</div>
         </div>
+
+        <div class="mySlides fade">
+          <img
+            src="assests/bestSellerCupcakes/chocolateoreo.webp"
+            style="height: 250px; width: auto"
+          />
+          <div class="text">Chocolate Oreo</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="assests/bestSellerCupcakes/vanillavanilla.webp"
+            style="height: 250px; width: auto"
+          />
+          <div class="text">Vanilla Vanilla</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="assests/bestSellerCupcakes/vanillacarmel.webp"
+            style="height: 250px; width: auto"
+          />
+          <div class="text">Vanilla Carmel</div>
+        </div>
+
+        <!-- Next button -->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </section>
     <section id="menu">
