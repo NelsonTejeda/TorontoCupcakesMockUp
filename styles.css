@@ -233,6 +233,15 @@ body {
 
 .homePageBanner h1 {
   font-size: 48px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease; /* Safari and Chrome */
+  -moz-transition: 0.5s ease; /* Firefox 4 */
+  -o-transition: 0.5s ease; /* Opera */
+  -ms-transition: 0.5s ease; /* Explorer 10 */
+}
+
+.homePageBanner h1:hover{
+  font-size: 60px;
 }
 
 .favorite_cupcakes_object {
@@ -289,6 +298,12 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  width: 110px;
+  transition: width ease;
+  -webkit-transition: 0.5s ease; /* Safari and Chrome */
+  -moz-transition: 0.5s ease; /* Firefox 4 */
+  -o-transition: 0.5s ease; /* Opera */
+  -ms-transition: 0.5s ease; /* Explorer 10 */
 }
 
 .menu_button:hover {
@@ -296,6 +311,7 @@ body {
   animation-duration: 0.5s;
   background-color: #f7cad0;
   color: #36454f;
+  width: 200px;
 }
 
 .menu_button_div {
