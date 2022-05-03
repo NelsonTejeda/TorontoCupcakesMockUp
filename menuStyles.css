@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background: linear-gradient(to top, #f7cad0 0%, #ffffff 100%);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f7cad0; */
+    color: #ff477e;
+    /* border-style: solid;
+    border-color: #36454f;
+    border-width: 0 0 0.5px 0; */
+  }
+  
+  .logo-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 20px;
+  }
+  
+  .logo-text {
+    margin-top: 5%;
+  }
+  
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #ff477e;
+    padding: 1rem;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .navbar-links li a:hover {
+    color: #f7cad0;
+  }
+  
+  .toggleBTN {
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 8%;
+    height: 4%;
+  }
+  
+  .toggleBTN .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ff477e;
+    border-radius: 10px;
+  }
+  
+  .logo-image-two {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .toggleBTN {
+      display: flex;
+    }
+  
+    .navbar-links {
+      display: none;
+      width: 100%;
+      animation: fadeIn 2s;
+      -webkit-animation: fadeIn 2s;
+      -moz-animation: fadeIn 2s;
+      -o-animation: fadeIn 2s;
+      -ms-animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .navbar-links li {
+      text-align: center;
+    }
+  
+    .navbar-links li a:hover {
+      color: #ff477e;
+      background-color: rgb(238, 192, 192);
+    }
+  
+    .navbar-links.active {
+      display: flex;
+      background-color: #fffafb;
+    }
+  
+    .logo-text {
+      display: none;
+    }
+  
+    .logo-image-one {
+      display: none;
+    }
+  
+    .logo-image-two {
+      display: flex;
+    }
+  
+    .logo-title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo-image-two {
+      margin-right: 8%;
+    }
+  
+    .info {
+      text-align: center;
+    }
+  
+    .info div {
+      margin-left: 2%;
+    }
+  }
+  
+  .footer {
+    display: flex;
+    justify-items: space;
+    /* background-color: #ff99cc; */
+    /* This is just to show that the footer and header are two seperate items */
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #36454f;
+    border-width: 0.5px 0 0 0;
+  }
+  
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 100%;
+  }
+  
+  .info div {
+    flex: 40%;
+    margin-right: 10%;
+  }
+  
+  .title {
+    width: 100%;
+  }
+  
+  .content {
+    width: 100%;
+  }
+  
+  .map {
+    margin: 20px;
+  }
+  
+  .facebook-logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+  
+  .insta-logo {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 2%;
+  }
+  
+  @media (max-width: 815px) {
+    .map {
+      display: none;
+    }
+  }
+
+  /* main content below */
+
+  /* start of slide show */
+  .slideImage{
+      width: 100%;
+      height: auto;
+  }
+
+  .slideImageContainer{
+     height: 500px;
+     overflow: hidden;
+  }
+
+  .info-box{
+    text-align: center;
+    overflow: scroll;
+    width: 40%;
+    height: 60%;
+    padding: 5px 30px;
+    background-color: whitesmoke;
+    background:rgba(255,255,255,0.8);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+
+  .slideButton {
+    opacity: 1;
+    background-color: #f7cad0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f7cad0;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #faafb9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin: 0 4px;
+  }
+
+  .dotContainer{
+      position: absolute;
+      top: 73%;
+      width:100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media (max-width: 815px) {
+    .dot {
+      display: none;
+    }
+    .info-box{
+        width: 80%;
+        left: 10%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .info-box{
+        top: 5%;
+        padding: 0;
+    }
+  }
+
+  /* end of slideshow */
+
+  .cupcakeObject {
+    background-color: white;
+    border-radius: 25px;
+    /* padding: 20px;  */
+    width: 200px;
+    height: 300px;  
+  }
+
+  .textScreen{
+    position: absolute;
+    border-radius: 25px;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(247, 186, 186, 0.7);
+    text-align: center;
+    opacity: 0;
+    color: #ff477e;
+    padding: 30px 0;
+    transition: opacity 0.5s;
+
+  }
+  .textScreen:hover{
+      opacity: 1;
+  }
