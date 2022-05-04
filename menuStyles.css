@@ -160,7 +160,7 @@
     justify-items: space;
     /* background-color: #ff99cc; */
     /* This is just to show that the footer and header are two seperate items */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     border-style: solid;
     border-color: #36454f;
     border-width: 0.5px 0 0 0;
@@ -248,6 +248,11 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    transition: background-color 0.5s;
+  }
+
+  .slideButton:hover{
+    background-color: #ff477e;
   }
 
   .slideshow-container {
@@ -341,7 +346,8 @@
     border-radius: 25px;
     /* padding: 20px;  */
     width: 200px;
-    height: 300px;  
+    height: 300px;
+    margin: 20px 0 20px 20px;
   }
 
   .textScreen{
@@ -360,3 +366,54 @@
   .textScreen:hover{
       opacity: 1;
   }
+
+  #cupcakeList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .extraOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .cateringOverlay{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+  }
+
+  .cateringOverlay:hover{
+    opacity: 0.7;
+  }
+
+  .partySamplerOverlay{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    cursor: pointer;
+  } 
+
+  .partySamplerOverlay:hover{
+    opacity: 0.7;
+  }
+
