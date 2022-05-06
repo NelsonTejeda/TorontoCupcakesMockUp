@@ -159,7 +159,7 @@ body {
   justify-items: space;
   /* background-color: #ff99cc; */
   /* This is just to show that the footer and header are two seperate items */
-  margin-top: 50px;
+  /* margin-top: 50px; */
   border-style: solid;
   border-color: #36454f;
   border-width: 0.5px 0 0 0;
@@ -211,212 +211,145 @@ body {
 
 /* non-footer and header code. */
 
-.homePageBanner {
-  color: #ff5c8a;
-  margin: 0 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation-name: homeBannerFadeIn;
-  animation-duration: 4s;
-}
-
-@keyframes homeBannerFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.homePageBanner h1 {
-  font-size: 48px;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease; /* Safari and Chrome */
-  -moz-transition: 0.5s ease; /* Firefox 4 */
-  -o-transition: 0.5s ease; /* Opera */
-  -ms-transition: 0.5s ease; /* Explorer 10 */
-}
-
-.homePageBanner h1:hover{
-  font-size: 60px;
-}
-
-.favorite_cupcakes_object {
-  color: #ff5c8a;
+.openingImage{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
 }
 
-.favorite_cupcakes_object h1 {
-  font-size: 48px;
-}
-
-.favorite_cupcakes_div img {
-  width: 15%;
+.openingImage img{
+  width: 100%;
   height: auto;
-  padding: 2%;
 }
 
-.favorite_cupcakes_div img:hover {
-  border: 5px dotted #ff477e;
-  border-radius: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.favorite_cupcakes_div {
+.info-box{
+  background-color: rgba(249, 240, 240, 0.9);
+  position: absolute;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 0 20px;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  border-radius: 25px;
+  /* text-align: center; */
 }
 
-@keyframes BTNAnimation {
-  from {
-    background-color: #ff5c8a;
-    color: white;
-  }
-  to {
-    background-color: #f7cad0;
-    color: #36454f;
-  }
-}
-
-.menu_button {
-  background-color: #ff5c8a;
+.info-box button {  
+  width: 150;
+  height: 100;
+  background-color: #f7cad0;  
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 110px;
-  transition: width ease;
-  -webkit-transition: 0.5s ease; /* Safari and Chrome */
-  -moz-transition: 0.5s ease; /* Firefox 4 */
-  -o-transition: 0.5s ease; /* Opera */
-  -ms-transition: 0.5s ease; /* Explorer 10 */
 }
 
-.menu_button:hover {
-  animation-name: BTNAnimation;
-  animation-duration: 0.5s;
-  background-color: #f7cad0;
-  color: #36454f;
+.infoButton{
+  transition: background-color 2s ease;
+  transition: width ease 0.5s;
+}
+
+.infoButton:hover{
+  background-color: #ff477e;
   width: 200px;
 }
 
-.menu_button_div {
-  margin: 50px;
+@media (max-width: 600px) {
+  .info-box{
+    text-align: center;
+  }
+}
+
+.missionStatement{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /* max-width: 1000px;
-  position: relative;
-  margin: auto; */
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: relative;
-  color: #ff5c8a;
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  margin-left: 2%;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  margin-right: 2%;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #ff5c8a;
-  font-size: 15px;
-  padding: 8px 12px;
-  /* position: absolute; */
-  bottom: 8px;
+  flex-direction: column;
+  padding: 0 200px;
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+@media (max-width: 600px) {
+  .missionStatement{
+    padding: 0 10px;
+  }
+}
+
+#bestSellers{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.cupcakeObject{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 200px;
+  border-radius: 20px;
+  padding-top: 10px;
+  color: #ff477e;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.newsletter img{
+  width: 100%;
+  height: auto;
+}
+
+.newsletterText{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletterText p{
+  text-align: center;
+  margin: 0 10%;
+  margin-bottom: 3%;
+}
+
+.newsletterText input{
+  width: 100%;
+  max-width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.active,
-.dot:hover {
-  background-color: #f7cad0;
-}
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
+
+

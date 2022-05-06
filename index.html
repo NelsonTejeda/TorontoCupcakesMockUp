@@ -67,72 +67,89 @@
     <!-- end of header -->
 
     <!-- start of main content -->
-    <section id="title_image_section">
-      <div class="homePageBanner">
-        <h1>Looking For Somehting Tasty?</h1>
-        <img
-          src="assests/landscape-1513878815-delish-baileys-cupcakes-still002.jpg"
-          width="80%"
-          height="auto"
-        />
+    <div class="openingImage">
+      <img
+        src="./assests/pexels-alisha-mishra-1343505.jpg"
+        alt="Photo of healthy cupcales. No cream is seen on the cupcakes"
+      />
+      <div class="info-box">
+        <h1 style="color: #faafb9">Healthy Special</h1>
+        <p style="font-size: 25px">
+          These Healthy Cupcakes are light, fluffy, and moist. They're also less
+          sweet than most conventional cupcakes, both in the cake and in the
+          pretty pink frosting, but they are still SO delicious! ON SALE NOW!
+        </p>
+        <button class="infoButton">Check It Out!</button>
+      </div>
+    </div>
+
+    <div class="missionStatement">
+      <h1>Our Cupcakes</h1>
+      <p style="font-size: 20px">
+        We are driven by loving what we do and what we make everyday. We get to
+        use the finest ingredients to make what we believe are the tastiest
+        treats around. And... We love the idea that our treats are making people
+        happy every time they bite into one. How much fun is that!
+      </p>
+    </div>
+
+    <section id="bestSellers">
+      <div>
+        <div class="cupcakeObject">
+          <img
+            class="slideImage"
+            src="./assests/bestSellerCupcakes/chocolateoreo.webp"
+            alt="Choclate Oreo Cupcake"
+            style="height: 225px"
+          />
+          <p style="text-align: center; font-size: 20px">Choclate Oreo</p>
+        </div>
+      </div>
+      <div>
+        <div class="cupcakeObject">
+          <img
+            class="slideImage"
+            src="./assests/bestSellerCupcakes/redvelvet.webp"
+            alt="Red Velvet Cupcake"
+            style="height: 225px"
+          />
+          <p style="text-align: center; font-size: 20px">Red Velvet</p>
+        </div>
+      </div>
+      <div>
+        <div class="cupcakeObject">
+          <img
+            class="slideImage"
+            src="./assests/bestSellerCupcakes/vanillacarmel.webp"
+            alt="Vanilla Caramel"
+            style="height: 225px"
+          />
+          <p style="text-align: center; font-size: 20px">Vanilla Caramel</p>
+        </div>
+      </div>
+      <div>
+        <div class="cupcakeObject">
+          <img
+            class="slideImage"
+            src="./assests/bestSellerCupcakes/vanillavanilla.webp"
+            alt="Vanilla Vanilla"
+            style="height: 225px"
+          />
+          <p style="text-align: center; font-size: 20px">Vanilla Vanilla</p>
+        </div>
       </div>
     </section>
-    <section id="favorite_cupcakes_section">
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Prev button -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img
-            src="assests/bestSellerCupcakes/redvelvet.webp"
-            style="height: 250px; width: auto"
-          />
-          <div class="text">Red Velvet</div>
-        </div>
 
-        <div class="mySlides fade">
-          <img
-            src="assests/bestSellerCupcakes/chocolateoreo.webp"
-            style="height: 250px; width: auto"
-          />
-          <div class="text">Chocolate Oreo</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            src="assests/bestSellerCupcakes/vanillavanilla.webp"
-            style="height: 250px; width: auto"
-          />
-          <div class="text">Vanilla Vanilla</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            src="assests/bestSellerCupcakes/vanillacarmel.webp"
-            style="height: 250px; width: auto"
-          />
-          <div class="text">Vanilla Carmel</div>
-        </div>
-
-        <!-- Next button -->
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="newsletter">
+      <img src="./assests/pexels-moose-photos-1037994.jpg" alt="newsletter sign up background photo: flowers spaced apart on a pink backdrop"/>
+      <div class="newsletterText">
+        <h1>Join our Cupcake Letter</h1>
+        <p>Get the freshest Toronto Cupcakes updates and offers right to your inbox! Plus, enjoy 10% off on your birthday when you share the date with us!</p>
+        <input type="text" id="fname" name="firstname" placeholder="Your best cupcake email">
       </div>
-      <br />
+    </div>
 
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </section>
-    <section id="menu">
-      <div class="menu_button_div">
-        <button class="menu_button">Menu</button>
-      </div>
-    </section>
+    </div>
     <!-- end of main content -->
 
     <!-- start of footer -->
