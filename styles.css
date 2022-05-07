@@ -278,6 +278,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .missionStatement{
+    padding: 0 10px;
+  }
+}
+
 @media (max-width: 600px) {
   .missionStatement{
     padding: 0 10px;
