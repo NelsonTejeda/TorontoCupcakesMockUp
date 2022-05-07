@@ -251,16 +251,16 @@ body {
   text-decoration: none;
   display: block;
   font-size: 16px;
+  transition: background-color 1s;
 }
 
 .infoButton{
-  transition: background-color 2s ease;
-  transition: width ease 0.5s;
+  transition: width 4s ease-in 4s;
 }
 
 .infoButton:hover{
   background-color: #ff477e;
-  width: 200px;
+  width: 300px;
 }
 
 @media (max-width: 600px) {
@@ -311,6 +311,12 @@ body {
   color: #ff477e;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: transform 300ms ease-out;
+}
+
+.cupcakeObject:hover{
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 .newsletter{
