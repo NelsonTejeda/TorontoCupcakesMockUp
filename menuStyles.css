@@ -225,7 +225,7 @@
 
   .info-box{
     text-align: center;
-    overflow: scroll;
+    overflow: hidden;
     width: 40%;
     height: 60%;
     padding: 5px 30px;
@@ -302,10 +302,10 @@
 
   .dotContainer{
       position: absolute;
-      top: 73%;
-      width:100%;
       display: flex;
+      width: 100%;
       justify-content: center;
+      bottom: 5%;
   }
 
   .active, .dot:hover {
@@ -338,7 +338,9 @@
         padding: 0px;
     }
     .info-box h1{
-      font-size: 25px;
+      display: none;
+      font-size: 15px;
+      text-decoration: none;
     }
   }
 
